@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Sortable Ninja</title>
+
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jqery-ui.css">
+		<script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.js'></script>
+		<script type="text/javascript" src='http://code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(function(){
+					$("#sortable").sortable();
+					$("#sortable").disableSelection();
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="container">
+			<ul id="sortable">
+				<li><span><img src="sort1.png"></span></li>
+				<li><span><img src="sort2.png"></span></li>
+				<li><span><img src="sort3.png"></span></li>
+				<li><span><img src="sort4.png"></span></li>
+				<li><span><img src="sort5.png"></span></li>
+			</ul>
+		</div>
+		
+
+	</body>
+</html>
